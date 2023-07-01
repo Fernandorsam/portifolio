@@ -1,219 +1,330 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-     <meta name="description" content="página de portifólio do Fernando,projetos front end">
-     <meta name="author" content="Fernando Rodrigues, front end">
-     <meta name="keywords" content="front end, desenvolvimento web, web design, programador">
-     <meta name="robots" content="index,nofollow">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="text/html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta
+      name="description"
+      content="página de portifólio do Fernando,projetos front end"
+    />
+    <meta name="author" content="Fernando Rodrigues, front end" />
+    <meta
+      name="keywords"
+      content="front end, desenvolvimento web, web design, programador"
+    />
+    <meta name="robots" content="index,nofollow" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/index.css">
-    <title>PORTIFÓLIO-FERNANDO</title> 
-
-</head>
-<body> 
- 
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>PORTIFÓLIO-FERNANDO</title>
+  </head>
+  <body>
     <header class="header-top size">
+      <figure class="btn-menu-openModal">
+        <img
+          id="btn-open-modal"
+          class="btn-header"
+          width="30px"
+          height="30px"
+          src="assets/icons/buttons/menu-nav.png"
+          alt="botao de menu"
+        />
+      </figure>
 
-        <figure class="btn-menu-openModal">
-            <img id="btn-open-modal" class="btn-header" width="30px" height="30px" src="assets/icons/buttons/menu-nav.png" alt="botao de menu">
+      <div class="fadeModal hide"></div>
+      <div class="modal hide">
+        <div class="container-header size">
+          <nav class="navigation-top">
+            <ul class="nav-ul-top">
+              <li class="nav-ul-li">
+                <a class="ancor" href="#sobre">SOBRE MIM</a>
+              </li>
+              <li class="nav-ul-li">
+                <a class="ancor" href="#skill">HABILIDADES</a>
+              </li>
+              <li class="nav-ul-li">
+                <a class="ancor" href="#projects">PROJETOS</a>
+              </li>
+              <li class="nav-ul-li">
+                <a class="ancor" href="#contacts">CONTATOS</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <figure class="fig-close-menu">
+          <img
+            id="btn-close-modal"
+            class="btn-header"
+            src="assets/icons/buttons/botao-fechar.png"
+            alt=""
+          />
         </figure>
-           
-            <div class="fadeModal hide"></div>
-            <div class="modal hide">
-                <div class="container-header size">
-                    <nav class="navigation-top ">
-                        <ul class="nav-ul-top">
-                            <li class="nav-ul-li"><a class="ancor" href="#sobre">SOBRE MIM</a></li>
-                            <li class="nav-ul-li"><a class="ancor" href="#skill">HABILIDADES</a></li>
-                            <li class="nav-ul-li"><a class="ancor" href="#projects">PROJETOS</a></li>
-                            <li class="nav-ul-li"><a class="ancor" href="#contacts">CONTATOS</a></li>
-                        </ul>
-                    </nav>
-                      
-               </div>
-
-               <figure class="fig-close-menu" >
-                 <img id="btn-close-modal" class="btn-header" src="assets/icons/buttons/botao-fechar.png" alt="">
-               </figure>
-            </div>
-            <div class="container-fig size">
-                 <figure class="fig-img-header">
-                  <a href="https://avatars.githubusercontent.com/u/97768571?v=4" target="_blank">
-                    <img id="img-header" src="assets/img/photoProfile.jpeg" alt="foto perfil de Fernando">
-                  </a>
-                 </figure>
-                <h1 class="title">FERNANDO RODRIGUES</h1>
-                <p class="sub-title"><small>DESENVOLVEDOR FRONT END</small></p>
-               
-            </div>
-       
-           
+      </div>
+      <div class="container-fig size">
+        <figure class="fig-img-header">
+          <a
+            href="https://avatars.githubusercontent.com/u/97768571?v=4"
+            target="_blank"
+          >
+            <img
+              id="img-header"
+              src="assets/img/photoProfile.jpeg"
+              alt="foto perfil de Fernando"
+            />
+          </a>
+        </figure>
+        <h1 class="title">FERNANDO RODRIGUES</h1>
+        <p class="sub-title"><small>DESENVOLVEDOR FRONT END</small></p>
+      </div>
     </header>
     <div class="line-division"></div>
     <main class="size">
-
       <div class="container-about size">
-          <section class="sect-about size">
-              <h1 class="title" id="sobre" >SOBRE MIM</h1>
-              <div class="container-paragraph">
-                  <p class="paragraph">
-                        Olá! Meu nome é Fernando e estou muito contente
-                      em compartilhar meu trabalho e paixão por design e desenvolvimento web. 
-                  </p>
-                  <p class="paragraph">
-                         Embora exerço atividades atualmente não inerentes no front end, descobri que a criação de interfaces 
-                      e a codificação são áreas fascinantes, que permitem explorar minha criatividade 
-                      e habilidades técnicas.
-                  </p>
-                  <p class="paragraph">
-                         Em constante aprimoramento em HTML, 
-                      CSS e JavaScript para criar sites intuitivos, responsivos e 
-                      visualmente atraentes.
-
-                  </p>
-                  <p class="paragraph">
-                       Estou animado para fazer parte da comunidade 
-                    de front-end e contribuir para projetos desafiadores e inovadores.
-
-                  </p>
-                  <p class="paragraph">
-                        Agradeço por sua visita em meu portfólio,
-                      espero que possamos trabalhar juntos.
-                  </p>
-              </div>
-            
-          </section>
-          
+        <section class="sect-about size">
+          <h1 class="title" id="sobre">SOBRE MIM</h1>
+          <div class="container-paragraph">
+            <p class="paragraph">
+              Olá! Meu nome é Fernando e estou muito contente em compartilhar
+              meu trabalho e paixão por design e desenvolvimento web.
+            </p>
+            <p class="paragraph">
+              Embora exerço atividades atualmente não inerentes no front end,
+              descobri que a criação de interfaces e a codificação são áreas
+              fascinantes, que permitem explorar minha criatividade e
+              habilidades técnicas.
+            </p>
+            <p class="paragraph">
+              Em constante aprimoramento em HTML, CSS e JavaScript para criar
+              sites intuitivos, responsivos e visualmente atraentes.
+            </p>
+            <p class="paragraph">
+              Estou animado para fazer parte da comunidade de front-end e
+              contribuir para projetos desafiadores e inovadores.
+            </p>
+            <p class="paragraph">
+              Agradeço por sua visita em meu portfólio, espero que possamos
+              trabalhar juntos.
+            </p>
+          </div>
+        </section>
       </div>
-      <div class="line-division"></div>  
+      <div class="line-division"></div>
 
       <div class="container-skill size">
-          <section class="sect-skill size">
-
-              <h1 class="title" id="skill" >HABILIDADES</h1>
-              <div class="containerSkillsIcon size">
-                  <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/html5.png" alt="icone do html5">
-                  </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/css-3.png" alt="icone do Css-3">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/js.png" alt="icone do JavaScript">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/react.png" alt="icone do react-js">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/sass.png" alt="icone do sass">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/nodejs.png" alt="icone do node-js">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/mysql.png" alt="icone do mySql">
-                    </figure>
-                    <figure class="fig-skills">
-                      <img class="iconSkills" src="assets/icons/skills/git_icon.png" alt="icone do git">
-                    </figure>              
-              </div>
-    
-          </section>
-         
+        <section class="sect-skill size">
+          <h1 class="title" id="skill">HABILIDADES</h1>
+          <div class="containerSkillsIcon size">
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/html5.png"
+                alt="icone do html5"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/css-3.png"
+                alt="icone do Css-3"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/js.png"
+                alt="icone do JavaScript"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/react.png"
+                alt="icone do react-js"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/sass.png"
+                alt="icone do sass"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/nodejs.png"
+                alt="icone do node-js"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/mysql.png"
+                alt="icone do mySql"
+              />
+            </figure>
+            <figure class="fig-skills">
+              <img
+                class="iconSkills"
+                src="assets/icons/skills/git_icon.png"
+                alt="icone do git"
+              />
+            </figure>
+          </div>
+        </section>
       </div>
       <div class="line-division"></div>
 
       <div class="container-projects size">
         <section class="sect-projects">
-          <h1 class="title" id="projects" >PROJETOS</h1>
+          <h1 class="title" id="projects">PROJETOS</h1>
 
           <div class="containerProjects">
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-             
-              <p class="info-project">
-                  PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
             <div class="contentProject">
-              <a class="proj-ancor" href="noProject.html" target="_self" rel="noopener noreferrer">
-                <img class="proj-img" src="assets/img/codeProj.png" alt="imagem website">
+              <a
+                class="proj-ancor"
+                href="noProject.html"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="proj-img"
+                  src="assets/img/codeProj.png"
+                  alt="imagem website"
+                />
               </a>
-              
-              <p class="info-project">
-                 PROJETO EM BREVE
-              </p>
+
+              <p class="info-project">PROJETO EM BREVE</p>
             </div>
-            
-            
           </div>
         </section>
       </div>
@@ -221,39 +332,54 @@
     </main>
     <footer class="container-footer size">
       <div class="containerIcons">
-          <h1 class="title" id="contacts" >CONTATO</h1>
-          <div class="container-iconCont">
-            <figure class="fig-footer">
-              <a href="https://github.com/Fernandorsam" target="_blank" rel="noopener noreferrer">
-                <img class="imgIcon" src="assets/icons/contacts/github.png" alt="logo do GitHub">
-              </a>
-             </figure>
-             <figure class="fig-footer">
-              <a href="https://www.linkedin.com/in/fernandorsam/" target="_blank" rel="noopener noreferrer">
-                <img class="imgIcon" src="assets/icons/contacts/linkedin.png" alt="logo do LinkedIn">
-  
-              </a>
-             </figure>
-             <figure class="fig-footer">
-              <a href="https://t.me/Fernandorsam" target="_blank" rel="noopener noreferrer">
-                <img class="imgIcon" src="assets/icons/contacts/telegram.png" alt="logo do Telegram">
-              </a>
-             </figure>
-          </div>
-           
+        <h1 class="title" id="contacts">CONTATO</h1>
+        <div class="container-iconCont">
+          <figure class="fig-footer">
+            <a
+              href="https://github.com/Fernandorsam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="imgIcon"
+                src="assets/icons/contacts/github.png"
+                alt="logo do GitHub"
+              />
+            </a>
+          </figure>
+          <figure class="fig-footer">
+            <a
+              href="https://www.linkedin.com/in/fernandorsam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="imgIcon"
+                src="assets/icons/contacts/linkedin.png"
+                alt="logo do LinkedIn"
+              />
+            </a>
+          </figure>
+          <figure class="fig-footer">
+            <a
+              href="https://t.me/Fernandorsam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="imgIcon"
+                src="assets/icons/contacts/telegram.png"
+                alt="logo do Telegram"
+              />
+            </a>
+          </figure>
+        </div>
       </div>
       <div class="copyRight">
-        <p>
-          &copy;FERNANDO RODRIGUES | <small>all rights reserved</small>
-         </p>
+        <p>&copy;FERNANDO RODRIGUES | <small>all rights reserved</small></p>
       </div>
-        
     </footer>
- 
 
-    
     <script src="assets/js/index.js"></script>
-   
-   
-</body>
+  </body>
 </html>
