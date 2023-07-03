@@ -71,7 +71,13 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 5;
    
+    
+   
 }
+.header-top .logo{
+    display: none;
+}
+
 .modal{ 
     position: fixed;
     left: 0;
@@ -82,18 +88,23 @@ body{
     max-width: 38%;
     height: 100%; 
    
+   
 }
+
 .header-top .fadeModal,
 .header-top .modal{
    
     pointer-events: all;
     display: none;
     
+    
 }
 
  .fadeModal .hide,
  .modal .hide{
     pointer-events: none;
+    transition-duration: 700ms;
+    
 
 }
  .fig-close-menu{
@@ -158,7 +169,7 @@ body{
 .container-fig .fig-img-header{
     width: 200px;
     max-width: 70%;
-    margin: 0 0 10px;
+    margin: 40px 0 10px;
     border-radius: 50%;
       
 
@@ -544,9 +555,30 @@ footer p{
        
       
     }
+    
     .header-top{
+        width: 100%;
         margin-top: 0;
     }
+    .header-top .logo{
+        display: block;
+        margin-top: 10px;
+        width: 100px;
+        height: 80px;
+        position: fixed;
+        background-color: transparent;
+    }
+    .logo .fig-logo{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .logo #imgLogo{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
     .title{
             font-size: 4vh;
            }
@@ -563,61 +595,68 @@ footer p{
             display: none;
         }
         .modal {
-            width: 940px;
+            width: 820px;
             max-width: 60%;
-            height:30px;
-            top:unset;
+            height:55px;
+            top:0;
             left: unset;
             right: 0;
-            margin: 0 auto 0.5rem;
-            background-color:rgba(0, 0, 0, 0.803);
+            margin: 1px auto 0.5rem;
+            background-color:rgba(212, 207, 207, 0);
             border-radius: 10px;
-            
-            
+               
             
         }
         .modal .container-header{
-            width: 940px;
+            width:100%;
+            height: auto;
             max-width: 100%;
             border-radius: 10px;
+            background-color: transparent;
             
         }
         .fadeModal, .fig-close-menu{
             display: none;
         }
         .modal .navigation-top{
-            width: 940px;
-            max-width: 100%;
-            height: 50px;
-            background-color:inherit;
-            margin: 0 auto 0;
+            
+            width:100%;
+            height:auto;
+            background-color:rgba(212, 207, 207, 0);
+            margin: 28px auto 0;
             border-radius: 10px;
             
         }
          .modal .nav-ul-top{
-            width: 940px;
-            max-width: 100%;
+            width: 100%;
             border-radius: 10px;
-            height:50px;
+            height:auto;
             flex-direction: row;
             text-align: center;
             margin: 0 ;
-            background-color: rgba(139, 137, 137, 0.103); 
+            background-color:rgba(212, 207, 207, 0); 
         
         }
         .modal .nav-ul-li{
-            margin: 5px auto 5px;
-            font-size: 1rem;
+            margin: 0 auto ;
+            font-size: 18px;
+            width: 20%;
+            height: 16px;
+            background-color: rgba(212, 207, 207, 0);
         }
         .nav-ul-top .ancor{
             color: #140101;
             margin: 0 auto;
         }
+        .nav-ul-top .ancor:hover{
+            color: #7d9494;
+            transition-duration: 500ms;
+        }
         .container-fig{
             margin-top: 70px;
         }
         .container-fig .fig-img-header{
-            margin-top: 10px;
+            margin-top: 60px;
             width: 310px;
             max-width: 100%;
         }
