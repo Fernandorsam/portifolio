@@ -8,22 +8,19 @@
 html{
     scroll-behavior: smooth;
 }
-
 .size{
     width: 940px;
     max-width: 95%;
     height: auto;
     margin: 0 auto 0;
 }
-.title{
-    
+.title{ 
     font-size: 4vw;
     color: #140101;
     margin: 1rem auto 1rem;
     letter-spacing: 1px;
     width: fit-content;
     height: auto;
-
 } 
 .sub-title{
     font-size: 3vw;
@@ -46,10 +43,6 @@ body{
     height: auto;
     margin-left: 0;
     z-index: 2;
-   
-    
-
-
 }
 .btn-header {
     opacity: .1;
@@ -58,9 +51,6 @@ body{
     transition: 0.7s;
     font-size: .7rem;
     cursor: pointer;
-   
-    
-
 }
 .btn-header:hover{
     opacity: 1;
@@ -72,15 +62,11 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 5;
-   
-    
-   
+    z-index: 5;  
 }
 .header-top .logo{
     display: none;
 }
-
 .modal{ 
     position: fixed;
     left: 0;
@@ -89,33 +75,23 @@ body{
     z-index: 10;
     width: 500px;
     max-width: 38%;
-    height: 100%; 
-   
-   
+    height: 100%;  
 }
-
 .header-top .fadeModal,
-.header-top .modal{
-   
+.header-top .modal{ 
     pointer-events: all;
-    display: none;
-    
-    
+    display: none; 
 }
-
  .fadeModal .hide,
  .modal .hide{
     pointer-events: none;
     transition-duration: 700ms;
-    
-
 }
  .fig-close-menu{
     width: 8vw;
     margin: 30px 0 20px 30vw;
     border-radius: 50%;
-    background: transparent;
-    
+    background: transparent;  
  }
   .modal #btn-close-modal {
     background: transparent;
@@ -123,15 +99,12 @@ body{
     width: 6vw;
     height: 4vh;
     top: 0;
-    right: 0;
-    
+    right: 0; 
  }
  .modal .navigation-top {
     height: 200px;
     background-color:rgba(0, 0, 0, 0.703);
     margin: 50px auto 10px;
-    
-
  }
  .modal .nav-ul-top{
     display: flex;
@@ -140,8 +113,7 @@ body{
     align-items: center;
     background-color:rgba(0, 0, 0,0.878);
     margin-bottom: 30px;
-    width: 100%;
-   
+    width: 100%; 
 }
 .modal .nav-ul-li{
     margin: 20px auto 0px;
@@ -149,17 +121,14 @@ body{
     color: #FFFFFF;
     width: 80%;
     height: 30px;
-    background-color: transparent;
-   
+    background-color: transparent;  
 }
 .modal .ancor{
     text-decoration: none;
    background-color: transparent;
-   color: #FFFFFF;
-   
+   color: #FFFFFF;  
 }
 /*==========-container-fig-==========*/
-
 .container-fig {
     display: flex;
     flex-direction: column;
@@ -174,8 +143,6 @@ body{
     max-width: 70%;
     margin: 40px 0 10px;
     border-radius: 50%;
-      
-
 }
 .fig-img-header #img-header{
     width: 300px;
@@ -183,12 +150,9 @@ body{
     border-radius: 50%;
     border: none;
     background-color: transparent;
-   
-    
-
+    box-shadow: 1px 3px 6px 2px #140101;
 }
 /*==========-container-about-============*/
-
 .container-paragraph{
     width: 480px;
     max-width: 100%;
@@ -211,10 +175,7 @@ body{
     word-wrap:break-word;
     margin-bottom: 0.5rem;
     font-size: 3.8vw;
-    line-height: 1.2rem;
-   
-   
-    
+    line-height: 1.2rem;   
 }
 /*============-skill-============*/
 .containerSkillsIcon{
@@ -235,9 +196,7 @@ body{
     width: 400px;
     max-width: 48%;
     border-radius: 100%;
-    margin: 0 auto 18px;
-    
-    
+    margin: 0 auto 18px;  
 }
 .iconSkills{
     width: 400px;
@@ -247,7 +206,6 @@ body{
     margin: 0 auto 10px;
     cursor: pointer;
 }
-
 /*==========-projects-==========*/
 .sect-projects{
     height: auto;
@@ -258,15 +216,13 @@ body{
     flex-direction: column;
 }
 .contentProject{
-
     width: 100%;
     height: auto;
     margin: 0 auto 1rem;
     display: flex;
     flex-direction: column;
     background-color: rgb(195, 190, 190);
-    border-radius: 10px;
-   
+    border-radius: 10px; 
 }
 .contentProject a{
     width: 100%;
@@ -275,7 +231,6 @@ body{
     display: flex;
     justify-content: center;
     background-color: transparent;
-
 }
 .contentProject  a img{
     width: 100%;
@@ -293,7 +248,6 @@ body{
     color: #6d6a6a;
     font-size: 3vw;
 }
-
 /*============-footer-============*/
 .conatinerIcons{
     width: 500px;
@@ -315,7 +269,6 @@ body{
     height: auto;
     margin: 0 auto 1rem;
     padding: 0;
-
 }
 .imgIcon{
     width: 200px;
@@ -336,18 +289,14 @@ footer p{
     height: auto;
     margin: 0 auto 0;
     color: #140101;
-    opacity: 0.6;
-    
+    opacity: 0.6;   
 }
-
-
 
 @media screen and (min-width:480px){
     
     .paragraph{
         font-size: 1.8rem;
         line-height: 2rem;
-       
     }
     
 }
@@ -398,14 +347,10 @@ footer p{
     .container-iconCont{
         display: flex;
         justify-content: space-between;
-        
-
     }
     .container-iconCont .fig-footer{
         margin-left: 30px;
     }
-   
-
 
 }
 @media screen and (min-width:750px) and (max-width:940px) {
@@ -419,7 +364,6 @@ footer p{
     .header-top{
         width: 940px;
         max-width: 100%;
-    
     }
 .btn-menu-openModal{
     display: none;
@@ -431,10 +375,7 @@ footer p{
     left: unset;
     margin: 0 auto 5px;
     background-color: inherit;
-    display: block;
-    
-    
-    
+    display: block;  
 }
 .modal .container-header{
     width: 940px;
@@ -448,8 +389,7 @@ footer p{
     max-width: 100%;
     height: 50px;
     background-color:inherit;
-    margin: 0 auto 0;
-    
+    margin: 0 auto 0;  
 }
  .modal .nav-ul-top{
     width: 940px;
@@ -460,7 +400,6 @@ footer p{
     text-align: center;
     margin: 0;
     background-color: rgba(197, 192, 192, 0.73); 
-
 }
 .modal .nav-ul-li{
     margin: 5px auto 5px;
@@ -510,12 +449,9 @@ footer p{
     gap: 2px;
     margin-top: 1rem;
     padding: 5px;
-
-
 }
 .fig-skills{
     width: 20%;
-
 }
 .sect-projects{
   padding: 0;
@@ -527,14 +463,11 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     margin: 1rem auto 0; 
-    margin-left: 10%;
-   
+    margin-left: 10%; 
 }
 .contentProject{
     width: 26.5%;
     margin: 8px;
-   
-   
 }
 .contentProject .info-project{
     font-size: 2vw;
@@ -544,8 +477,6 @@ footer p{
     gap: 5rem;
 }
 
-
-    
 }
 @media screen and (min-width:941px) {
 
@@ -558,10 +489,7 @@ footer p{
         justify-content: center;
         align-items: center;
         padding: 0;
-       
-      
     }
-    
     .header-top{
         width: 100%;
         margin-top: 0;
@@ -584,54 +512,54 @@ footer p{
         height: 100%;
         background-color: transparent;
     }
-
-    .title{
-            font-size: 4vh;
-           }
-          
+    .logo #imgLogo:hover{
+        opacity: 0.7;
+        transition: 500ms ease-in-out;
+    }
+    .title {
+      font-size: 4vh;
+    }      
    .sub-title{
-            font-size: 3vh;
-           }
-            .header-top{
-                width: 940px;
-                max-width: 100%;
-        
-            }
-        .btn-menu-openModal{
-            display: none;
-        }
-        .modal {
-            width: 820px;
-            max-width: 60%;
-            height:55px;
-            top:0;
-            left: unset;
-            right: 0;
-            margin: 1px auto 0.5rem;
-            background-color:rgba(212, 207, 207, 0);
-            border-radius: 10px;
-               
-            
-        }
+     font-size: 3vh;
+    }
+    .header-top{
+        width: 940px;
+        max-width: 100%;
+    }
+    .btn-menu-openModal{
+        display: none;
+    }
+    .modal {
+        width: 820px;
+        max-width: 60%;
+        height:55px;
+        top:0;
+        left: unset;
+        right: 0;
+        margin: 1px auto 0.5rem;
+        background-color:rgba(212, 207, 207, 0);
+        border-radius: 10px;
+    }
         .modal .container-header{
             width:100%;
             height: auto;
             max-width: 100%;
             border-radius: 10px;
-            background-color: transparent;
-            
+            background-color: transparent;   
         }
         .fadeModal, .fig-close-menu{
             display: none;
         }
-        .modal .navigation-top{
-            
+        .container-fig #img-header:hover{
+            border: 1px dashed rgba(20, 1, 1, 0.498);
+            transition: 700ms ease-in-out;
+        }
+        .modal .navigation-top{  
             width:100%;
             height:auto;
             background-color:rgba(212, 207, 207, 0);
             margin: 28px auto 0;
-            border-radius: 10px;
-            
+            border-radius: 10px; 
         }
          .modal .nav-ul-top{
             width: 100%;
@@ -641,7 +569,6 @@ footer p{
             text-align: center;
             margin: 0 ;
             background-color:rgba(212, 207, 207, 0); 
-        
         }
         .modal .nav-ul-li{
             margin: 0 auto ;
@@ -657,7 +584,8 @@ footer p{
         .nav-ul-top .ancor:hover{
             color: #7d9494;
             transition-duration: 500ms;
-        }
+            text-decoration: underline;
+        }  
         .container-fig{
             margin-top: 70px;
         }
@@ -693,12 +621,14 @@ footer p{
             max-width: 75%;
             gap: 2px;
             margin-top: 3rem;
-        
-        
         }
         .fig-skills{
             width: 38%;
-        
+        }
+        .iconSkills:hover{
+            opacity: 0.7;
+            border: 1px dashed #14010160;
+            transition: 500ms ease-in-out;
         }
         .sect-projects{
             width: 940px;
@@ -711,6 +641,10 @@ footer p{
         }
         .contentProject{
             width: 30%;
+        }
+        .contentProject:hover{
+            opacity: 0.8;
+            transition: 500ms;
         }
         .contentProject .info-project{
             font-size: 0.9rem;
@@ -730,6 +664,11 @@ footer p{
         }
        .imgIcon{
             max-width:40%;
+        }
+        .imgIcon:hover{
+            opacity: 0.8;
+            transition: 500ms ease-in-out;
+            border: 1px dashed #14010160;
         }
         .copyRight p{
             font-size: 10px;

@@ -28,8 +28,6 @@ if (window.outerWidth > 749) {
    modal.style.display  = 'block';
 
 }
-   
-
 //percorre o cada icone de habilidades no DOM
 iconSkills.forEach(function(icon){
 
@@ -49,7 +47,6 @@ iconSkills.forEach(function(icon){
        el.style.transform = `translate(${randomX}px, ${randomY}px)`;
     })
  }
- 
  // função que retorna posição de origem após da execução do 'setTimeout()'
  function returnOriginPosition(){
     iconSkills.forEach(function(el){
