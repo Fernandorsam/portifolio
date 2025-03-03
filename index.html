@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Fernando Rodrigues - Desenvolvedor Full Stack">
+    <meta name="keywords" content="desenvolvedor, full stack, web, frontend, backend, react, nodejs">
+    <meta name="author" content="Fernando Rodrigues">
+    <title>Fernando Rodrigues | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/myLogo/myLogo.png.svg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#home">
+                    <img src="assets/icons/myLogo/myLogo.png.svg" alt="Logo Fernando Rodrigues">
+                </a>
+            </div>
+            <button class="menu-btn" aria-label="Menu de navegação">
+                <img src="assets/icons/buttons/menu-nav.png" alt="Ícone do menu">
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, sou <span class="highlight">Desenvolvedor</span></h1>
+            <div class="typing-container">
+                <p class="typing-text"></p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Entre em Contato</a>
+                <a href="#projects" class="btn secondary">Ver Projetos</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/img/photoProfile.jpeg" alt="Foto de Fernando Rodrigues">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-content" data-aos="fade-up">
+            <div class="about-text">
+                <p>Me chamo Fernando Rodrigues e sou desenvolvedor web apaixonado por criar experiências digitais incríveis. Com foco em desenvolvimento front-end e back-end, busco sempre aprender novas tecnologias e aprimorar minhas habilidades.</p>
+                <p>Minha jornada na programação começou com HTML, CSS e JavaScript, e desde então venho expandindo meus conhecimentos em React, Node.js e outras tecnologias modernas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Minhas Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="fade-up">
+                <img src="assets/icons/skills/html5.png" alt="HTML5">
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/icons/skills/css-3.png" alt="CSS3">
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/icons/skills/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/icons/skills/react.png" alt="React">
+                <h3>React</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/icons/skills/nodejs.png" alt="Node.js">
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="assets/icons/skills/sass.png" alt="Sass">
+                <h3>Sass</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/icons/skills/git_icon.png" alt="Git">
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                <img src="assets/icons/skills/mysql.png" alt="MySQL">
+                <h3>MySQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+                <img src="assets/img/codeProj.png" alt="Screenshot do Projeto">
+                <div class="project-info">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site pessoal desenvolvido com HTML5, CSS3 e JavaScript puro. Implementa animações suaves, design responsivo e formulário de contato.</p>
+                    <div class="project-links">
+                        <a href="https://seu-portfolio.com" target="_blank" rel="noopener noreferrer" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/seu-usuario/portfolio" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="social-links">
+                    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/contacts/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/contacts/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://t.me/seu-usuario" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons/contacts/telegram.png" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Fernando Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
