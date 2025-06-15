@@ -1,160 +1,159 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Fernando Rodrigues - Desenvolvedor Full Stack">
-    <meta name="keywords" content="desenvolvedor, full stack, web, frontend, backend, react, nodejs">
-    <meta name="author" content="Fernando Rodrigues">
-    <title>Fernando Rodrigues | Desenvolvedor Full Stack</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" type="image/svg+xml" href="assets/icons/myLogo/myLogo.png.svg">
+    <meta name="description" content="Portfólio de Fernando Dev - Desenvolvedor Web Criativo">
+    <meta name="keywords" content="Fernando Rodrigues, Desenvolvedor Web, Portfólio, Projetos, React, Node.js, JavaScript">
+    <meta name="robots" content="index">
+    <meta name="author" content="Fernando Dev">
+    
+
+    <title>Fernando-Dev </title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <a href="#home">
-                    <img src="assets/icons/myLogo/myLogo.png.svg" alt="Logo Fernando Rodrigues">
-                </a>
+
+<body class="text-gray-800 antialiased">
+
+    <div id="app" class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Cabeçalho com Logo e Nome -->
+        <header class="flex justify-center items-center py-6 px-6 border-b border-gray-200 relative">
+            <div class="flex items-center gap-2">
+                <!-- Logo 'F' estilizada com HTML/CSS -->
+                <div class="relative w-10 h-12 flex items-center  justify-center overflow-hidden">
+                    <!-- Main vertical bar - F -->
+                    <div class="absolute w-4 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-bl-full rounded-tr-full transform -rotate-12 origin-bottom-left" style="left: 10%; top: -10%;"></div>
+                    <!-- Top horizontal bar - F -->
+                    <div class="absolute w-10 h-4 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full transform rotate-6 origin-top-left" style="left: 0; top: 15%;"></div>
+                    <!-- Middle horizontal bar - F -->
+                    <div class="absolute w-7 h-4 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full transform -rotate-6 origin-top-left" style="left: 5%; top: 45%;"></div>
+                </div>
+                <div class="animate-slide-in-up px-2">
+                    <h1 class="text-2xl px-0  w-71 font-bold text-gray-900">Fernando Rodrigues</h1>
+                    <p class="text-sm text-gray-500">Desenvolvedor Web Criativo</p>
+                </div>
             </div>
-            <button class="menu-btn" aria-label="Menu de navegação">
-                <img src="assets/icons/buttons/menu-nav.png" alt="Ícone do menu">
+            
+            <!-- Botão Hambúrguer para Mobile -->
+            <button id="mobile-menu-toggle" class="md:hidden mx-0  text-gray-600 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-3 bg-gray-100 hover:bg-gray-200 shadow-sm transition-colors z-20">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Olá, sou <span class="highlight">Desenvolvedor</span></h1>
-            <div class="typing-container">
-                <p class="typing-text"></p>
-            </div>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn primary">Entre em Contato</a>
-                <a href="#projects" class="btn secondary">Ver Projetos</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/img/photoProfile.jpeg" alt="Foto de Fernando Rodrigues">
-        </div>
-    </section>
+            <!-- Navegação Principal por Abas -->
+            <nav id="main-nav" class=" absolute top-full left-0 mb-12 max-w-2xl bg-white md:bg-transparent shadow-lg md:shadow-none py-8 md:py-0 hidden md:block z-10 px-2 w-full my:auto">
+                <ul id="mobile-nav-menu" class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 text-center md:text-left w-full">
+                    <li><a href="#overview" data-view="overview" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors nav-active py-2 block">Home</a></li>
+                    <li><a href="#projects" data-view="projects" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors py-2 block">Projetos</a></li>
+                    <li><a href="#about" data-view="about" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors py-2 block">Sobre</a></li>
+                    <li><a href="#contact" data-view="contact" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors py-2 block">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>Sobre Mim</h2>
-        <div class="about-content" data-aos="fade-up">
-            <div class="about-text">
-                <p>Me chamo Fernando Rodrigues e sou desenvolvedor web apaixonado por criar experiências digitais incríveis. Com foco em desenvolvimento front-end e back-end, busco sempre aprender novas tecnologias e aprimorar minhas habilidades.</p>
-                <p>Minha jornada na programação começou com HTML, CSS e JavaScript, e desde então venho expandindo meus conhecimentos em React, Node.js e outras tecnologias modernas.</p>
-            </div>
-        </div>
-    </section>
+        <main id="main-content" class="lg:pt-28 pt-20">
+            <!-- Seção de Visão Geral (Padrão) -->
+            <section id="overview" class="view active">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Soluções Digitais, do Conceito ao Código</h2>
+                    <p class="text-lg text-gray-600 mb-12">
+                        Sou um desenvolvedor apaixonado por transformar ideias em realidade digital, combinando design intuitivo com engenharia de software robusta. Abaixo, uma visão geral das minhas competências técnicas.
+                    </p>
+                </div>
+                <!-- Altura responsiva do gráfico ajustada para melhor visualização em mobile -->
+                <div class="chart-container h-80 sm:h-96 md:h-[400px] lg:h-[500px]">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+                 <p class="text-center text-sm text-gray-500 mt-4">toque sobre os pontos para ver os detalhes da habilidade.</p>
+            </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Minhas Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="assets/icons/skills/html5.png" alt="HTML5">
-                <h3>HTML5</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/icons/skills/css-3.png" alt="CSS3">
-                <h3>CSS3</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/icons/skills/js.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/icons/skills/react.png" alt="React">
-                <h3>React</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/icons/skills/nodejs.png" alt="Node.js">
-                <h3>Node.js</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
-                <img src="assets/icons/skills/sass.png" alt="Sass">
-                <h3>Sass</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
-                <img src="assets/icons/skills/git_icon.png" alt="Git">
-                <h3>Git</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
-                <img src="assets/icons/skills/mysql.png" alt="MySQL">
-                <h3>MySQL</h3>
-            </div>
-        </div>
-    </section>
+            <!-- Seção de Projetos -->
+            <section id="projects" class="view">
+                 <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Portfólio de Projetos</h2>
+                    <p class="text-lg text-gray-600">
+                       Explore meus trabalhos, desde interfaces dinâmicas a sistemas backend complexos. Use os filtros para navegar pelas tecnologias.
+                    </p>
+                </div>
+                <div id="project-filters" class="flex justify-center gap-2 sm:gap-4 mb-10 flex-wrap">
+                    <button class="filter-btn bg-purple-600 text-white px-5 py-2 rounded-full font-medium" data-filter="all">Todos</button>
+                    <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-medium" data-filter="React">React</button>
+                    <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-medium" data-filter="Node.js">Node.js</button>
+                    <button class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full font-medium" data-filter="JavaScript">JavaScript</button>
+                </div>
+                <div id="project-gallery" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Projetos serão inseridos aqui pelo JavaScript -->
+                </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Meus Projetos</h2>
-        <div class="projects-grid">
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/img/codeProj.png" alt="Screenshot do Projeto">
-                <div class="project-info">
-                    <h3>Portfólio Pessoal</h3>
-                    <p>Site pessoal desenvolvido com HTML5, CSS3 e JavaScript puro. Implementa animações suaves, design responsivo e formulário de contato.</p>
-                    <div class="project-links">
-                        <a href="https://seu-portfolio.com" target="_blank" rel="noopener noreferrer" class="btn">Ver Projeto</a>
-                        <a href="https://github.com/seu-usuario/portfolio" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                <!-- Seção do Gerador de Ideias de Projetos (Gemini API) -->
+                <div class="mt-20 pt-10 border-t border-gray-200 max-w-3xl mx-auto">
+                    <h3 class="text-3xl font-bold text-center text-gray-900 mb-6">✨ Gerador de Ideias de Projetos ✨</h3>
+                    <p class="text-lg text-gray-600 text-center mb-8">
+                        Precisa de inspiração para o seu próximo projeto? Descreva um tema, tecnologia ou apenas o tipo de desafio que você busca, e o Gemini irá sugerir uma ideia!
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <textarea id="project-idea-input" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 text-gray-700 h-32 resize-y" placeholder="Ex: Um aplicativo de gerenciamento de tarefas com React e Firebase, um jogo web simples com JavaScript, uma API de e-commerce..."></textarea>
+                        <button id="generate-idea-btn" class="bg-purple-600 text-white px-8 py-4 rounded-lg shadow-md hover:bg-purple-700 transition-all text-xl font-semibold transform hover:scale-105 flex items-center justify-center gap-2">
+                            <span>Gerar Ideia</span> ✨
+                        </button>
+                        <div id="idea-output" class="mt-8 p-6 bg-white rounded-xl shadow-lg text-gray-700 leading-relaxed min-h-[100px] flex items-center justify-center text-center">
+                            Sua ideia de projeto aparecerá aqui!
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Entre em Contato</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="social-links">
-                    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/contacts/github.png" alt="GitHub">
-                    </a>
-                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/contacts/linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://t.me/seu-usuario" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/contacts/telegram.png" alt="Telegram">
-                    </a>
+            <!-- Seção Sobre -->
+            <section id="about" class="view">
+                 <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Minha Trajetória</h2>
+                     <p class="text-lg text-gray-600">
+                        Mais do que apenas código: uma jornada de aprendizado contínuo e paixão por resolver problemas.
+                    </p>
                 </div>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit" class="btn primary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+                <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <img src="/assets/img/photoProfile.jpeg" alt="Foto de Fernando" class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover shadow-md flex-shrink-0">
+                    <div class="text-left">
+                         <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Olá! Meu nome é Fernando e sou um desenvolvedor web apaixonado por transformar ideias em realidade através do código. Minha jornada na programação começou com o fascínio por criar e otimizar, o que me levou a explorar profundamente tecnologias como **JavaScript, React e Node.js**.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Acredito no poder da colaboração e na aprendizagem contínua. Cada projeto é uma oportunidade para aprender algo novo e aplicar as melhores práticas para entregar soluções de alta qualidade que gerem impacto positivo.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <footer class="footer">
-        <p>&copy; 2023 Fernando Rodrigues. Todos os direitos reservados.</p>
-    </footer>
+            <!-- Seção de Contato -->
+            <section id="contact" class="view">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Vamos Construir Algo Juntos</h2>
+                    <p class="text-lg text-gray-600 mb-10">
+                        Estou aberto a novas oportunidades e colaborações. Se você tem um projeto em mente ou gostaria de se conectar, não hesite em me contatar.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                         <a href="mailto:fernandorsam30@gmail.com" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-purple-600 text-white px-8 py-4 rounded-lg shadow-md hover:bg-purple-700 transition-all text-lg font-semibold transform hover:scale-105">
+                            <span>📧</span>
+                            Enviar E-mail
+                        </a>
+                         <a href="https://www.linkedin.com/in/Fernandorsam" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-gray-800 text-white px-8 py-4 rounded-lg shadow-md hover:bg-gray-900 transition-all text-lg font-semibold transform hover:scale-105">
+                           <span>🔗</span>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-    <script src="assets/js/main.js"></script>
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="/assets/js/script.js"></script>
 </body>
 </html>
