@@ -19,13 +19,15 @@
 
 <body class="text-gray-800 antialiased">
 
-    <div id="app" class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+    <div id="app" class="container mx-auto max-w-6xl px-4 sm:px-6  lg:px-8 py-8">
+
+        
         
         <!-- Cabeçalho com Logo e Nome -->
-        <header class="flex justify-center items-center py-6 px-6 border-b border-gray-200 relative">
-            <div class="flex items-center gap-2">
+        <header class="flex justify-center sm:flex-col-2 gap-1 lg:items-center py-6 px-6 border-b border-gray-200 relative">
+            <div class="flex items-center  md:gap-4 lg:gap-6 w-full sm:w-auto">
                 <!-- Logo 'F' estilizada com HTML/CSS -->
-                <div class="relative w-10 h-12 flex items-center  justify-center overflow-hidden">
+                <div class="relative w-8 h-12 flex items-center  justify-center overflow-hidden sm:border-gray-0 max-w-6xl rounded-lg">
                     <!-- Main vertical bar - F -->
                     <div class="absolute w-4 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-bl-full rounded-tr-full transform -rotate-12 origin-bottom-left" style="left: 10%; top: -10%;"></div>
                     <!-- Top horizontal bar - F -->
@@ -34,18 +36,13 @@
                     <div class="absolute w-7 h-4 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full transform -rotate-6 origin-top-left" style="left: 5%; top: 45%;"></div>
                 </div>
                 <div class="animate-slide-in-up px-2">
-<h1 class="text-2xl px-0 font-bold text-gray-900">Fernando Rodrigues</h1>
+                    <h1 class="text-2xl px-0 font-bold text-gray-900">Fernando Rodrigues</h1>
                     <p class="text-sm text-gray-500">Desenvolvedor Web Criativo</p>
                 </div>
             </div>
             
-            <!-- Botão Hambúrguer para Mobile -->
-            <button id="mobile-menu-toggle" class="md:hidden mx-0  text-gray-600 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-3 bg-gray-100 hover:bg-gray-200 shadow-sm transition-colors z-20">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-
             <!-- Navegação Principal por Abas -->
-<nav id="main-nav" class="absolute top-full left-0 mb-12 bg-white md:bg-transparent shadow-lg md:shadow-none py-8 md:py-0 hidden md:block z-10 px-2 w-full my-auto">
+            <nav id="main-nav" class="absolute top-full left-0 mb-12 bg-white md:bg-transparent shadow-lg md:shadow-none py-8 md:py-0 hidden md:block z-10 px-2 w-full my-auto">
                 <ul id="mobile-nav-menu" class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 text-center md:text-left w-full">
                     <li><a href="#overview" data-view="overview" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors nav-active py-2 block">Home</a></li>
                     <li><a href="#projects" data-view="projects" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors py-2 block">Projetos</a></li>
@@ -53,7 +50,13 @@
                     <li><a href="#contact" data-view="contact" class="nav-link text-lg font-medium text-gray-600 hover:text-purple-600 transition-colors py-2 block">Contato</a></li>
                 </ul>
             </nav>
+
+              <!-- Botão Hambúrguer para Mobile -->
+            <button id="mobile-menu-toggle" class="md:hidden mx-0  text-gray-600 hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2 bg-gray-100 hover:bg-gray-200 shadow-sm transition-colors z-20">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
         </header>
+          
 
         <main id="main-content" class="lg:pt-28 pt-20">
             <!-- Seção de Visão Geral (Padrão) -->

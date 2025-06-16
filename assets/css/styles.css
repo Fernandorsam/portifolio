@@ -32,6 +32,7 @@
             /* Altura controlada por classes Tailwind diretamente no elemento HTML */
             /* Removido: height: 60vh; max-height: 500px; */
         }
+        
         @keyframes typing {
             from { width: 0 }
             to { width: 100% }
