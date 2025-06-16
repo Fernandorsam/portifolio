@@ -25,7 +25,7 @@
                     title: 'Dashboard Interativo',
                     description: 'Desenvolvimento de uma interface de usuário dinâmica com React e Tailwind CSS para visualização de dados em tempo real.',
                     tags: ['React', 'JavaScript'],
-                    link: '#'
+                    link: 'https://github.com/Fernandorsam/DashboardInt'
                 },
                 {
                     title: 'Plataforma de E-commerce',
