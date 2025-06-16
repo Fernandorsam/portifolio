@@ -243,4 +243,6 @@
             // --- INITIALIZATION ---
             renderChart();
             renderProjects();
+        
         });
+
