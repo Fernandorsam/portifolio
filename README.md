@@ -40,17 +40,17 @@ https://fernandorsam.github.io/portifolio/
 # 📦 Estrutura do Projeto
 * A organização do repositório segue uma estrutura clara para facilitar a compreensão e a manutenção:
 
-.
-├── index.html                  # O arquivo HTML principal do portfólio.
-├── assets/                     # Contém todos os recursos estáticos.
-│   ├── css/
-│   │   └── styles.css          # Estilos CSS personalizados que complementam o Tailwind.
-│   ├── js/
-│   │   └── script.js           # Lógica JavaScript da aplicação.
-│   └── img/
-│       ├── photoProfile.jpeg   # Imagem de perfil.
-│       └── ...                 # Outras imagens utilizadas no site.
-└── README.md                   # Este arquivo.
+* .
+* ├── index.html                  >> O arquivo HTML principal do portfólio.
+* ├── assets/                     >> Contém todos os recursos estáticos.
+* │   ├── css/
+* │   │   └── styles.css          >> Estilos CSS personalizados que complementam o Tailwind.
+* │   ├── js/
+* │   │   └── script.js           >> Lógica JavaScript da aplicação.
+* │   └── img/
+* │       ├── photoProfile.jpeg   >> Imagem de perfil.
+* │       └── ...                 >> Outras imagens utilizadas no site.
+* └── README.md                   >> Este arquivo.
 
 # 🚀 Como Executar o Projeto Localmente
 * Para clonar e rodar o projeto em sua máquina local, siga os passos abaixo:
